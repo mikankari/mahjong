@@ -10,6 +10,8 @@ init = (event) ->
 	initStack()
 	initDora()
 	initPlayers()
+	document.querySelector "#button-next"
+		.addEventListener "click", next
 	draw()
 	return
 
