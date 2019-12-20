@@ -26,13 +26,13 @@ unique = [
 	"s7"
 	"s8"
 	"s9"
-	"_ton"
-	"_nan"
-	"_sha"
-	"_pei"
-	"_haku"
-	"_hatu"
-	"_chun"
+	"tton"
+	"tnan"
+	"tsha"
+	"tpei"
+	"thaku"
+	"thatu"
+	"tchun"
 ]
 stack = []
 

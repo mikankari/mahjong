@@ -71,7 +71,7 @@ processDiscard = ->
 	split = splitPlayer player
 	indexes = for _, index in split when split[index].length is 1
 		current = parseHai split[index][0]
-		if current.type is "tu"
+		if current.type is "t"
 			player.indexOf current.name
 		else
 			before = split[index - 1]
@@ -134,9 +134,9 @@ parseHai = (hai) ->
 				number: parseInt hai.charAt 1
 				name: hai
 			}
-		when "_"
+		when "t"
 			{
-				type: "tu"
+				type: "t"
 				number: -1
 				name: hai
 			}

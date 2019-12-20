@@ -112,7 +112,7 @@
           continue;
         }
         current = parseHai(split[index][0]);
-        if (current.type === "tu") {
+        if (current.type === "t") {
           _results.push(player.indexOf(current.name));
         } else {
           before = split[index - 1];
@@ -193,9 +193,9 @@
           number: parseInt(hai.charAt(1)),
           name: hai
         };
-      case "_":
+      case "t":
         return {
-          type: "tu",
+          type: "t",
           number: -1,
           name: hai
         };
